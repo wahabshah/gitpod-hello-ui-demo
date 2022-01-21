@@ -8,7 +8,11 @@ image:
 ports:
   - port: 6080
     protocol: "http"
-    
+
+vscode:
+  extensions:
+    - ms-vscode.cpptools
+
 tasks:
   - command: "go get -v ./... "
   - command: gp await-port 6080            &&
